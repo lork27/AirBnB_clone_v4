@@ -36,6 +36,7 @@ $(document).ready(function () {
     }
   });
   $(":button").click(function(){
+    $('.places > article').remove();
     $.ajax({
       type: 'POST',
       url: 'http://0.0.0.0:5001/api/v1/places_search',
